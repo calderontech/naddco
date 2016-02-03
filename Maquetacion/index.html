@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="es-Es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imaginary Store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/ico" href="images/icon.ico"/>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="js/function.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="fullContent cBlcak">
+      <div class="contentWeb">
+        <p class="nameSesion"> Welcome Thomas.</p>
+        <a class="manageAcount">[Manage Account]</a>
+        <a class="singOut"> Sing out</a>
+      </div>
+    </div>
+    <div class="fullContent">
+      <div class="contentWeb menuContent">
+        <button class="buttonMovil"></button>
+        <div class="logoContent logoMovil">
+          <img src="images/logo.png" alt="Imaginary Store" />
+        </div>
+        <div class="contentmenu">
+          <nav>
+            <a href="#">Categories</a>
+            <a href="#">Top Products</a>
+            <a href="#">Carts</a>
+          </nav>
+          <div class="logoContent">
+            <img src="images/logo.png" alt="Imaginary Store" />
+          </div>
+          <form class="search">
+            <input class="searchMenu" type="text" name="search" value="" placeholder="search anything in store">
+            <input type="button" value="search" class="searchButton">
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <header>
+      <div class="fullContent cRed">
+        <div class="contentWeb">
+          <ol class="breadcrumb">
+            <li itemscope itemtype="#">
+              <a href="#" itemprop="url">
+                <span itemprop="title">Top Products</span>
+              </a>
+              /
+            </li>
+            <li itemscope itemtype="#">
+              <a href="#" itemprop="url">
+                <span itemprop="title">This Week</span>
+              </a>
+              /
+            </li>
+            <li itemscope itemtype="#">
+              <a href="#" itemprop="url">
+                <span itemprop="title">Disc</span>
+              </a>
+              /
+            </li>
+            <li itemscope itemtype="#">
+              <a href="#" itemprop="url">
+                <span itemprop="title">Bach</span>
+              </a>
+              /
+            </li>            
+          </ol>
+          <h1>J.S. Bach Top 25 Collections</h1>
+          <div class="addToCart">
+            <a href="#">Add to Cart</a>
+            <span> In stock. Estimated Delivery in 5 days.</span>
+          </div>
+        </div>  
+      </div> 
+    </header>
+  </section>
+
+  <div class="fullContent">
+    <div class="contentWeb">
+
+      <section class="contentCenter">
+        <article>
+          <h2 class="price">Limited Discount: <span class="afterPrice">$24.99</span> $19.99</h2>
+          <p class="textContent">
+            <span class="contentcard">
+              <span class="cardflip">
+                <img class="figure front" src="images/imgprincipal.png" alt="J.S. Bach" />
+                <span class="figure back">
+                  <span class="titleback">J.S. Bach - Top 25 Collection</span>
+                  <span class="lista">
+                    1. Violin Concerto in A minor</br>
+                    2. Christmas Oratorio</br>
+                    3. Jesu Joy of Man's</br>
+                    4. Christmas Oratorio</br>
+                  </span>
+                  <span class="goTo">Go to Album</span>
+                </span>
+              </span>
+            </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id diam metus. Duis tellus augue, malesuada ac lacinia eu, faucibus quis sem. Morbi at metus nisi, at facilisis sem. Nullam sit amet orci lorem. Aenean blandit tellus a ante malesuada ut malesuada lectus tristique. Suspendisse potenti. Donec urna quam, tempor ut dignissim sed, laoreet quis eros. In hac habitasse platea dictumst. Nunc tempus, risus non viverra ultrices, nisl purus ornare tellus, ut scelerisque nunc sem non turpis. Phasellus dictum interdum enim, non viverra odio pharetra id. Duis ut molestie purus. Morbi lectus lectus, ultricies eu congue et, posuere id felis. Fusce elementum felis lacinia mi convallis venenatis. Donec molestie tempor ligula, quis euismod ipsum posuere a. Donec id mi erat, at volutpat massa. Suspendisse tempor, massa eget venenatis malesuada, ipsum turpis suscipit risus, id fermentum dui purus eget nisi.</p>
+          </article>
+          <div class="previewsSection section">
+            <h2>Previews</h2>
+            <div class="oneAudio ml">
+              <audio id="audio1" src="audios/oratorio.mp3"></audio>
+              <div class="audio">
+                <button class="play" onclick="document.getElementById('audio1').play()"></button>
+                <button class="pause" onclick="document.getElementById('audio1').pause()"></button>
+              </div>
+              <div class="infoAudio">
+                <h3>Violin Concerto in A minor</h3>
+                <p> Duración 3:50</p>
+              </div>
+            </div>
+            <div class="oneAudio">
+              <audio id="audio2" src="audios/violin.mp3"></audio>
+              <div class="audio">
+                <button class="play" onclick="document.getElementById('audio2').play()"></button>
+                <button class="pause" onclick="document.getElementById('audio2').pause()"></button>
+              </div>
+              <div class="infoAudio">
+                <h3>Christmas Oratoruio</h3>
+                <p> Duración 2:26</p>
+              </div>
+            </div>
+            <div class="oneAudio ml">
+              <audio id="audio3" src="audios/bach.mp3"></audio>
+              <div class="audio">
+                <button class="play" onclick="document.getElementById('audio3').play()"></button>
+                <button class="pause" onclick="document.getElementById('audio3').pause()"></button>
+              </div>
+              <div class="infoAudio">
+                <h3>Jesu Joy of Man's Desiring</h3>
+                <p> Duración 3:27</p>
+              </div>
+            </div>
+            <div class="oneAudio">
+              <audio id="audio4" src="audios/suite.mp3"></audio>
+              <div class="audio">
+                <button class="play" onclick="document.getElementById('audio4').play()"></button>
+                <button class="pause" onclick="document.getElementById('audio4').pause()"></button>
+              </div>
+              <div class="infoAudio">
+                <h3>Suite No. 8 in D mayor</h3>
+                <p> Duración 3:28</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviwSection section">
+            <h2>Top Reviews</h2>
+            <div class="reviews"><p>Masterpiece! The must-have music you couldn't miss. <span class="autor"> - S.H. Mak </span> </p></div>
+            <div class="reviews"><p>Buy it now and you would not regard. <span class="autor"> - Johnahtan </span> </p></div>
+          </div>
+        </section>
+
+        <aside>
+          <div class="about">
+            <h2>About J.S. Back</h2>
+            <p>Nullam sit amet orci lorem. Aenean blandit tellus a ante malesuada ut malesuada lectus tristique. Suspendisse potenti. Donec urna quam, tempor ut dignissim sed, laoreet quis eros. In hac habitasse platea dictumst. Nunc tempus, risus non viverra ultrices, nisl purus ornare tellus.</p>
+          </div>
+          <div class="recommends">
+            <h2>Recommends</h2>
+            <div class="allRecommends">
+              <div class="oneRecommends">
+                <span class="contentcard">
+                  <span class="cardflip">
+                    <img class="figure front" src="images/imgsidebar.png" alt="J.S. Bach" />
+                    <span class="figure back">
+                      <span class="titleback">J.S. Bach - Top 25 Collection</span>
+                      <span class="lista">
+                        1. Violin Concerto in A minor</br>
+                        2. Christmas Oratorio</br>
+                        3. Jesu Joy of Man's</br>
+                        4. Christmas Oratorio</br>
+                      </span>
+                      <span class="goTo">Go to Album</span>
+                    </span>
+                  </span>
+                </span>  
+                <p> Bach Gold Collection T-Shirt</p>
+              </div>
+              <div class="oneRecommends">
+                <span class="contentcard">
+                  <span class="cardflip">
+                    <img class="figure front" src="images/imgsidebar.png" alt="J.S. Bach" />
+                    <span class="figure back">
+                      <span class="titleback">J.S. Bach - Top 25 Collection</span>
+                      <span class="lista">
+                        1. Violin Concerto in A minor</br>
+                        2. Christmas Oratorio</br>
+                        3. Jesu Joy of Man's</br>
+                        4. Christmas Oratorio</br>
+                      </span>
+                      <span class="goTo">Go to Album</span>
+                    </span>
+                  </span>
+                </span>  
+                <p>Bach Gold Collection</p>
+              </div>
+            </div>  
+          </div>  
+        </aside>
+
+      </div>
+    </div>
+
+    <div class="fullContent mBackMovil">
+      <div class="contentWeb">
+        <nav>
+            <a href="#" class="btt">Back to Top</a>
+            <a href="#">Categories</a>
+            <a href="#">Top Products</a>
+            <a href="#">Carts</a>
+          </nav>
+          <form class="search">
+            <input class="searchMenu" type="text" name="search" value="" placeholder="search in store">
+            <input type="button" value="Go" class="searchButton">
+          </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="fullContent cgray">
+        <div class="contentWeb">
+          <div class="sectionFooter">
+            <h3>Follow us</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="sectionFooter">
+            <h3>Newsletter</h3>
+            <p>Faucibus quis sem. Morbi at metus nisi, at facilisis sem. Nullam sit amet orci lorem. Aenean blandit tellus a ante malesuada ut malesuada.</p>
+            <form id="newsletter" method='post'>
+              <input type="email" name="email" required placeholder="your email" >
+              <input type="submit" value="Subscibe">
+            </form>
+          </div>
+          <div class="sectionFooter">
+            <h3>Refound Policy</h3>
+            <p>Morbi lectus lectus, ultricies eu congue et, posuere id felis. Fusce elementum felis lacinia mi convallis venenatis. Donec molestie tempor ligula, quis euismod ipsum posuere a. Donec id mi erat, at volutpat massa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="fullContent cBlcak">
+        <div class="contentWeb">
+          <p>© 2013. Imaginary Store.</p>
+          <p class="fLeft">Handmade in Leipzig, Germany.</p> 
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  </html>

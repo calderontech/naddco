@@ -1,0 +1,750 @@
+// Declaración de variables para Sass
+  //Paleta de colores
+	$pcolor: #212121;
+	$scolor: #db001d;
+	$scolorl: lighten(#db001d, 45%);
+	$scolord: #bf0426;
+	$tcolor: #6e6e6e;
+	$tcolorf: lighten(#6e6e6e, 35%);
+	$tcolorl: lighten(#6e6e6e, 50%);
+	$tcolorml: lighten(#6e6e6e, 80%);
+
+  //Fuente
+  @font-face {
+    font-family: pacifico;
+    src: url(../font/pacifico.woff);
+    font-weight: normal;
+}
+  	$fprincipal: pacifico;
+
+  @font-face {
+    font-family: ptsans;
+    src: url(../font/ptsans.woff);
+    font-weight: normal;
+}
+  	$fsecond: ptsans;
+  	$sizeprincipal : 14px;
+
+  //Mixins
+  @mixin block($wi) {
+  display:block;
+  position:relative;
+  float:left;
+  width: $wi;
+}
+  @mixin center($wic) {
+  max-width: $wic;
+  width: 98%;
+  float: none;
+  margin: 0 auto;
+  padding: 0 1%;
+  overflow:hidden;
+}
+  @mixin fondo($src) {
+  background-image: $src;
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: transparent;
+}
+
+@mixin innershadow($clr) {
+   -moz-box-shadow:    inset 0px 3px 2px $clr, 0px -10px 74px $clr;
+   -webkit-box-shadow: inset 0px 3px 2px $clr, 0px -10px 74px $clr;
+   box-shadow:         inset 0px 3px 2px $clr, 0px -10px 74px $clr;
+}
+@mixin innershadow2($clr) {
+   -moz-box-shadow:    inset 0px 5px 7px $clr,0px 0px 0px $clr;
+   -webkit-box-shadow: inset 0px 5px 7px $clr,0px 0px 0px $clr;
+   box-shadow:         inset 0px 5px 7px $clr,0px 0px 0px $clr;
+}
+@mixin innershadow3($clr) {
+   -moz-box-shadow:    inset 0px 0px 0px $clr,0px 5px 7px $clr;
+   -webkit-box-shadow: inset 0px 0px 0px $clr,0px 5px 7px $clr;
+   box-shadow:         inset 0px 0px 0px $clr,0px 5px 7px $clr;
+}
+@mixin listnone($wil) {
+list-style: none;
+    padding: 0;
+    margin: 0;
+    width: $wil;
+ }
+ @mixin fred() {
+ 	color: $tcolorml;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px #212121;
+}
+@mixin fblack($fsize: 30px) {
+ 	font-family: $fprincipal;
+	font-size: $fsize;
+	margin: 5px 0 10px 0;
+}
+@mixin fnblack($fsize: 15px) {
+ 	font-weight:bold;
+		line-height: 24px;
+		text-align: justify;
+		font-size: $fsize;
+}
+@mixin borderr($rounding: 4px){
+        -moz-border-radius: $rounding $rounding;
+        -webkit-border-radius: $rounding $rounding;
+        -khtml-border-radius: $rounding $rounding;
+        -o-border-radius: $rounding $rounding;
+        border-radius: $rounding $rounding;
+        border: $rounding $rounding;
+ }
+
+//**********************************************//
+  
+body{
+	@include block(100%);
+	@include fondo(url("../images/fondo.png"));
+	color: $pcolor;
+	font-family: $fsecond;	
+	font-size: $sizeprincipal;
+	margin: 0;
+}
+a, input[type="button"] { 
+	cursor: pointer;
+	text-decoration: none;
+	}
+
+.fullContent {
+	@include block(100%);
+}
+.contentWeb{
+@include center(960px);
+}
+.cBlcak {
+	background: $pcolor;
+	color: $tcolorml;
+	padding: 5px 0;
+	@media (max-width: 720px){
+	padding: 10px 0;
+	}
+	p, a{
+		float:left;
+		margin: 0;
+		@media (max-width: 720px){
+			font-size: 16px;
+			}
+		}
+	a{
+		color: $tcolor;
+		font-weight: bold;
+		margin-left: 5px;
+		}
+	.manageAcount{
+		@media (max-width: 480px){
+			float: right;
+		}
+	}	
+	.singOut {
+		float:right;
+			@media (max-width: 720px){
+				margin-right: 20%;
+			}
+			@media (max-width: 480px){
+				float: left;
+    			margin-top: 13px;
+    			width: 100%;
+			}
+		}
+	}
+.menuContent{
+	@media (max-width: 720px){
+	min-height: 140px;
+	}
+
+	.buttonMovil{
+		@include fondo(url("../images/botmovil.png"));
+		width:22px;
+		height: 18px;
+		border: 0;
+		display:none;
+		@media (max-width: 720px){
+			display: block;
+    		position: absolute;
+    		right: 10px;
+    		top: -28px;
+    		cursor:pointer;
+		}
+	}
+	.logoMovil{
+		display: none;
+		@media (max-width: 720px){
+			display:block;
+			margin: 0 auto;
+    		float: none;
+    		width: 96px;
+    		margin-top: 18px;
+		}
+	}
+	.contentmenu{
+		overflow: hidden;
+		@media (max-width: 720px){
+			position: absolute;
+	    	width: 100%;
+	    	left: 0;
+	    	height: auto;
+	    	z-index: 999;
+	    	top: 0;
+	    	display:none;
+	    	background-color: #eee;
+		}
+		nav{
+			@include block(auto);
+			min-width: 40%;
+			margin-top: 60px;
+			@media (max-width: 720px){
+				margin-top: 20px;
+				@include block(100%);
+			}
+			@media (max-width: 720px){
+				width: 90%;
+    			margin: 15px auto;
+    			float: none;
+			}
+			a{	
+				color: $scolor;
+				font-weight: bold;
+				padding: 8px 0;
+		    	margin: 0 6%;
+		    	@media (max-width: 720px){
+					font-size: 18px;
+					@include block(33%);
+					margin: 0;
+					border-right: 1px solid #db001d;
+					text-align:center;
+				}
+				@media (max-width: 480px){
+					width: 100%;
+    				border-right: 0;
+    				border-bottom: 1px solid #ccc;
+    				margin-bottom: 10px;
+    				text-align: left;
+				}
+			}
+			a:last-child{
+				@media (max-width: 720px){
+					border-right: none;
+				}
+			}
+			a:hover{
+				border-bottom: 1px solid $scolor;
+				@media (max-width: 720px){
+					border-bottom: none;
+				}
+				@media (max-width: 480px){
+					border-bottom: 1px solid #ccc;
+				}
+			}
+		}
+		.logoContent{
+			@include block(auto);
+			padding: 15px 0;
+			@media (max-width: 720px){
+				display:none;
+			}
+		}
+		.search{
+			@include block(37%);
+			float: right;
+		    margin-right: 4%;
+		    margin-top: 60px;
+		    @media (max-width: 720px){
+				margin: 20px auto;
+    			width: 80%;
+			}
+			@media (max-width: 480px){
+				width: 95%;
+			}
+			input{
+				@media (max-width: 720px){
+					padding: 15px;
+				}
+			}
+		    input[type="text"]{
+		    	width: 70%;
+		    	max-width: 270px;
+		    	padding: 10px;
+		    	@include innershadow(#e0e0e0);
+		    	@include fondo(url("../images/fondo.png"));
+		    	border: none;
+		    	@media (max-width: 480px){
+					width: 60%;
+				}
+		    }
+		    input[type="button"]{
+		    	width: 20%;
+		    	background: none;
+		   		border: none;
+		   		color: $tcolor;
+		   		font-weight:bold;
+		   		padding: 10px;
+		   		@media (max-width: 720px){
+					font-size: 17px;
+				}
+				@media (max-width: 480px){
+					font-size: 15px;
+    				padding: 10px;
+				}
+		    }
+		    .white{
+		    	background: #fff !important;
+		    }
+		    input[type="text"]:focus{
+		    	background: #fff;
+		    	border-top: 1px solid #e0e0e0;
+		    }
+		}
+	}
+}
+.cRed{
+	background: $scolor;
+	@include innershadow2(#750010);
+	.breadcrumb{
+		@include listnone(100%);
+		margin-top: 25px;
+    	font-size: 15px;
+		li, a{
+			display: inline;
+			@include fred();
+		}
+	}
+	h1{
+		font-family: $fprincipal;
+		font-size: 40px;
+    	line-height: 10px;
+    	@include fred();
+    	@include block(auto);
+    	@media (max-width: 720px){
+    		font-size: 31px;
+    	}
+    	@media (max-width: 480px){
+    		line-height: 50px;
+    		text-align: center;
+    	}
+	}
+	.addToCart{
+		@include block(190px);
+		float:right;
+		@media (max-width: 720px){
+			width: 100%;
+   			margin: 30px 0 20px 0;
+		}
+		a{
+			@media (max-width: 720px){
+				@include center(80%);
+				padding: 15px 0;
+				font-size: 20px;
+			}
+			@include fred();
+			@include block(100%);
+			padding: 15px 0;
+    		text-align: center;
+    		background: $scolord;
+    		@include borderr(4px);
+    		@include innershadow3(#750010);
+		}
+		a:hover{
+			box-shadow: none;
+		}
+		a:active{
+			background-color: #B2041B;
+		}
+		span{
+			@include fred();
+			@include block(100%);
+			font-size: 9px;
+			text-align:center;
+			margin-top:5px;
+			@media (max-width: 720px){
+			    font-size: 13px;
+			}
+		}
+	}
+}
+
+.contentCenter{
+	@media (max-width: 720px){
+		width: 100%;
+	}
+	@include block(76%);
+	padding-right: 3%;
+	h2{
+	  color: #tcolor;
+	  font-weight:bold;
+	  span{
+	  	color:$tcolor;
+	  	text-decoration: line-through;
+	  }
+	}
+	.textContent{
+		@include fnblack();
+		margin-top: 30px;
+	}
+	.textContent::selection{
+		background: #ca3b30;
+		color: #fff;
+	}
+	.textContent::selection{
+		background: #ca3b30;
+		color: #fff;
+	}
+	.textContent::-moz-selection{
+		background: #ca3b30;
+		color: #fff;
+	}
+	
+}
+.contentcard{
+	float: right;
+	margin-left: 20px;
+	position: relative;
+	width: 225px;
+	height: 236px;
+	@media (max-width: 480px){
+		width: 100%;
+	}
+	.cardflip{
+		width: 100%;
+  		height: 100%;
+  		position: absolute;
+  		transform-style: preserve-3d;
+  		transition: transform 1s;
+  		cursor:pointer;
+  		@media (max-width: 480px){
+			width: 230px;
+    		height: 236px;
+    		position: relative;
+    		margin: 0 auto;
+    		float: none;
+    		display: block;
+		}
+  		.figure{
+  			margin: 0;
+  			display: block;
+  			position: absolute;
+  			width: 100%;
+  			height: 100%;
+  			backface-visibility: hidden;
+  		}
+  		.front{
+  			height: auto;
+  		}
+  		.back{
+  			transform: rotateY( 180deg );
+  			@include fondo(url("../images/back.png"));
+ 		 	background-repeat: no-repeat;
+ 		 	background-size: 100%;
+  			.titleback{
+  				@include block(100%);
+  				font-weight: bold;
+  				text-align: center;
+    			margin: 10px 0;
+  			}
+  			.lista{
+  				@include block(100%);
+  				font-weight: 500;
+  				padding: 0 2%;
+  				line-height: 21px;
+  				margin-bottom:15px;
+  			}
+  			.goTo{
+  				@include center(110px);
+  				display: block;
+    			clear: both;
+    			padding: 5px 0;
+    			text-align: center;
+    			background: #cc3332;
+    			font-size: 12px;
+    			color: $tcolorml;
+    			@include borderr();
+    			cursor: pointer;
+  			}
+  		}
+	}
+	.flipped {
+ 		 transform: rotateY( 180deg );
+	}
+	}
+.previewsSection{
+	@include block(100%);
+	h2{
+		@include fblack();
+	}
+	.oneAudio{
+		@include fondo(url("../images/preview.png"));
+		background-repeat: no-repeat;
+		background-color: $scolorl;
+		@include block(47%);
+		@include borderr();
+		margin-bottom: 26px;
+    	margin-top: 10px;
+    	@media (max-width: 720px){
+			width: 98%;
+			margin-right: 1%;
+    		margin-left: 1%;  
+		}
+		button{
+			@include block(49px);
+    		height: 50px;
+    		color: transparent;
+    		@include fondo(url("../images/boton_play.png"));
+    		border: none;
+    		cursor: pointer;
+    		margin-left: 29px;
+    		margin-top: 10px;
+		}
+		.pause{
+		@include fondo(url("../images/boton_pause.png"));
+		position: absolute;
+		display: none;
+		}
+		.mostrar{
+			display:block	
+		}
+		.infoAudio{
+			@include block(auto);
+			margin-left: 8%;
+			@media (max-width: 480px){
+    			margin-left: 3%;
+    			width: 70%;
+    		}
+			h3{				
+				font-family: $fprincipal;
+				font-weight: bold;
+    			font-size: 18px;
+    			margin-bottom: 0;
+    			max-width: 190px;
+    			line-height: 24px;
+    			@media (max-width: 720px){
+    				max-width: 220px;
+    			}
+			}
+			p{
+				margin-top: 5px;
+    			font-size: 10px;
+    			font-weight: bold;
+			}
+		}
+	}
+	.ml{
+		margin-right: 6%;
+	}
+
+}
+
+.reviwSection{
+	@include block(100%);
+	h2{
+		@include fblack();
+	}
+	.reviews{
+		@include block(100%);
+		@include fondo(url("../images/comillas.png"));
+		background-repeat: no-repeat;
+		color: $tcolor;
+		height: 40px;
+    	font-size: 21px;
+    	font-weight: bold;
+    	font-style: italic;
+    	padding-bottom: 20px;
+    	margin-bottom: 50px;
+    	p{
+    		@include block(90%);
+			padding-left: 10%;
+			margin-top: 10px;
+			@media (max-width: 720px){
+    			padding-left: 60px;
+    			}
+    		@media (max-width: 720px){
+    			max-width:85%;
+    		}
+			span{
+				@include block(100%);
+				margin-top: 10px;
+				font-size: 17px;
+			}
+    	}
+	}
+}
+aside{
+	@include block(21%);
+	@media (max-width: 720px){
+    	width: 100%;
+    }
+	.about{
+		h2{
+			@include fblack(22px);
+			margin-bottom: 0;
+    		margin-top: 17px;
+		}
+		p{
+			@include fnblack();
+			margin-top: 5px;
+    		border-bottom: 1px dashed rgb(208, 208, 208);
+    		padding-bottom: 20px;
+		}
+	}
+
+		.recommends{
+			h2{
+				@include fblack(22px);
+			}
+			.allRecommends{
+				@media (max-width: 720px){
+    				overflow: hidden;
+    				@include center(480px);
+    			}
+    			@media (max-width: 480px){
+    				max-width: 255px;
+    			}
+			.oneRecommends{
+				@media (max-width: 720px){
+	    			@include block(40%);
+	    			margin-right: 5%;
+	    			margin-left: 5%;
+	    			max-width: 225px;
+	    			min-width: 167px;    		
+	    		}
+	    		@media (max-width: 480px){
+	    			width: 90%;    		
+	    		}	
+			}	
+			.contentcard{
+				width: 100%;
+	    		height: 207px;
+	    		@media (max-width: 480px){
+	    			height: 237px;    		
+	    		}
+			}
+			img{
+				width: 100%;
+			}
+			p{
+				margin: 0;
+				@include block(100%);
+				text-align: center;
+				margin-bottom: 23px;
+			}
+		}
+	}
+}
+
+.mBackMovil{
+	display:none;
+	@media (max-width: 720px){
+    	display: block;
+    }
+    a{
+    	@include block(100%);
+    	color: $scolor;
+    	padding: 10px;
+    	border-top: 1px solid #ddd;
+    	font-size: 17px;
+    	font-weight: bold;
+
+    }
+    .btt{
+    		@include fondo(url("../images/btt.png"));
+    		background-repeat: no-repeat;
+    		background-position: 5px 50%;
+    		padding-left: 35px;
+    	}
+    .btt:hover{
+    	background-color:rgba(219, 0, 29, 0.15);
+    }	
+    a:last-child{
+    border-bottom: 1px solid #ddd;
+    }
+    form{
+    @include block(100%);
+    margin-top: 20px;
+     input{
+     	@include block(100%);
+     	border: 1px solid #aaaaaa;
+     	padding: 10px 5px;
+     	background: none;
+     	margin: 10px 0;
+     }
+     input[type="text"]{
+     	width:98%;
+     	@media (max-width: 480px){
+     		width:97%;
+     	}
+     }
+     input[type="button"]{
+     margin-bottom: 30px;
+     }
+    }
+}
+
+footer{
+@include block(100%);
+overflow: hidden;
+	.cgray{
+		@include block(100%);
+		background: $tcolorf;
+		.sectionFooter{
+			@include block(31.33%);
+    		margin: 15px 0;
+    		padding: 0 1%;
+    		@media (max-width: 720px){
+    			width: 100%;
+    			margin: 5px 0;
+    		}
+			h3{
+				@include fblack(22px);
+				margin-bottom: 0;
+			}
+			p{
+				@include fnblack();
+				margin-top:5px;
+				@media (max-width: 480px){
+					max-width: 96%;
+				}
+			}
+		}
+	}
+	.cBlcak p{
+		font-weight: 500;
+    	font-size: 14px;
+    	margin: 10px 0;
+    	@media (max-width: 480px){
+			width: 100%;
+			text-align:center;
+			margin: 2px;
+		}
+	}
+	.fLeft{
+		float: right;	
+	}
+	form{
+		@include block(100%);
+		input[type="email"]{
+			@include block(96%);
+			border: none;
+			padding: 2%;
+			@media (max-width: 720px){
+				width: 94%;
+			}
+			@media (max-width: 480px){
+				padding: 15px 2%;
+			}
+		}
+		input[type="submit"]{
+		@include block(100%);
+    	border: 0;
+    	padding: 6px;
+    	font-weight: bold;
+    	margin-top: 15px;
+    	@media (max-width: 720px){
+				width: 98%;
+				padding: 15px 0;
+			}
+		}
+	}
+
+}
+
