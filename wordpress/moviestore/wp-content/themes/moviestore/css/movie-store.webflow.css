@@ -1,0 +1,866 @@
+.header {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+}
+
+.logo {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 1%;
+  float: left;
+}
+
+.searchf {
+  position: relative;
+  max-width: 300px;
+  margin-top: 15px;
+  margin-right: 20px;
+  float: right;
+}
+
+.inputsearch {
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+  background-color: #434343;
+  color:#fff;
+}
+
+.searchsubmit {
+  position: absolute;
+  right: 0px;
+  width: 20%;
+  height: 20px;
+  margin-top: 10px;
+  float: left;
+  background-color: transparent;
+  background-image: url('../images/lupita.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.c960 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  background-color: transparent;
+}
+
+.formwrap {
+  position: relative;
+  margin-bottom: 0px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 1%;
+}
+
+.slider {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+  background-color: #424242;
+}
+
+.sliderhome {
+  width: 100%;
+  height: 400px;
+  float: left;
+}
+
+.por-categoria {
+  margin-left: 1%;
+  float: left;
+  background-color: transparent;
+}
+
+.filtroporcagegoria {
+  font-family: 'Droid Sans', sans-serif;
+  color: #d8232a;
+  font-weight: 700;
+}
+
+.filtroporcagegoria.w--open {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.listcat.w--open {
+  width: 500px;
+  margin-left: 15px;
+  border-top: 3px solid #d8232a;
+  border-radius: 5px;
+  background-color: rgba(66, 66, 66, .98);
+}
+
+.itemlist {
+  width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  font-family: 'Droid Sans', sans-serif;
+  color: #fff;
+}
+
+.itemlist:hover {
+  text-decoration: underline;
+}
+
+.slide {
+  background-image: url('../images/portada-independence-day.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide.slide1 {
+  background-image: url('../images/portada-assassins.jpg');
+}
+
+.slide.slide2 {
+  background-image: url('../images/portada-dory.jpg');
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(12deg, rgba(0, 0, 0, .4) 29%, transparent);
+  background-image: linear-gradient(78deg, rgba(0, 0, 0, .4) 29%, transparent);
+}
+
+.body {
+  background-color: #edeff0;
+  -webkit-perspective: 108px;
+  perspective: 108px;
+}
+
+.titul {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 1%;
+  font-family: 'Droid Sans', sans-serif;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-shadow: 4px 1px 16px #000;
+}
+
+.titul.tdescrip {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 0%;
+  border-bottom: 2px solid #d8232a;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+.full {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  background-image: -webkit-linear-gradient(15deg, rgba(66, 66, 66, .56) 6%, transparent);
+  background-image: linear-gradient(75deg, rgba(66, 66, 66, .56) 6%, transparent);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  float: left;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.moviecontent {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  float: left;
+}
+
+.onemovie {
+  position: relative;
+  width: 25.8%;
+  margin-right: 3.6%;
+  margin-bottom: 20px;
+  margin-left: 3.6%;
+  float: left;
+}
+
+.onemovie.omh {
+  width: 17.8%;
+  margin-right: 3.6%;
+  margin-left: 3.6%;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.themovies {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: transparent;
+}
+
+.description {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: none;
+  margin-bottom: 20px;
+  padding-right: 3%;
+  padding-left: 3%;
+  float: left;
+}
+
+.desc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.desc:hover {
+  border: 4px solid #d8232a;
+}
+
+.titlegrid {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  padding: 2%;
+  opacity: 0;
+  -webkit-perspective: 751px;
+  perspective: 751px;
+  font-family: 'Droid Sans', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 20px #000;
+  -webkit-box-shadow: inset 0px 36px 30px 0px rgba(50, 50, 77, 0.58);
+-moz-box-shadow:    inset 0px 36px 30px 0px rgba(50, 50, 77, 0.58);
+  box-shadow:         inset 0px 36px 30px 0px rgba(50, 50, 77, 0.58);
+}
+
+.titlegrid.reltitul {
+  font-size: 16px;
+}
+
+.stars {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 35px;
+  float: left;
+  background-image: url('../images/rating-153125_960_720.png');
+  background-position: 50% 6px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.stars.relstar {
+  height: 25px;
+}
+
+.imagecontent {
+  position: relative;
+  width: 40%;
+  height: 305px;
+  max-width: 40%;
+  float: left;
+  background-image: url('../images/deadpool_2.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.textdescription {
+  position: relative;
+  width: 60%;
+  height: 297px;
+  padding-left: 5%;
+  float: left;
+}
+
+.shadow {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 92%;
+  height: 100%;
+  margin-left: 3%;
+  background-image: -webkit-linear-gradient(2deg, transparent, #000 41%, #000 90%, transparent);
+  background-image: linear-gradient(88deg, transparent, #000 41%, #000 90%, transparent);
+}
+
+.extract {
+  width: 80%;
+  margin-left: 0%;
+  font-family: 'Droid Sans', sans-serif;
+  color: #ababab;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.year {
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: 'Droid Sans', sans-serif;
+  color: #d8232a;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.year.info {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.yea {
+  margin-left: 2%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.yea.vars {
+  color: #434343;
+  text-transform: capitalize;
+}
+
+.yea.vars.calific {
+  position: relative;
+  width: 200px;
+  float: left;
+  background-image: url('../images/rating-153125_960_720.png');
+  background-position: 50% 0px;
+  background-size: auto;
+}
+
+.viewmore {
+  position: relative;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  float: left;
+  border-radius: 5px;
+  background-color: #d8232a;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 700;
+}
+
+.titlesection {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 1%;
+  float: left;
+  font-family: 'Changa One', Impact, sans-serif;
+  color: #434343;
+}
+
+.titlesection.titleinfo {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 34px;
+  line-height: 34px;
+}
+
+.peliculasrecientes {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.actoresdestacados {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  float: left;
+}
+
+.losactores {
+  width: 100%;
+  padding-left: 1%;
+  float: left;
+}
+
+.unactor {
+  position: relative;
+  width: 20%;
+  margin-bottom: 10px;
+  margin-left: 0%;
+  padding-left: 2%;
+  float: left;
+  background-image: url('../images/images.png');
+  background-position: 0px 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #434343;
+  text-decoration: none;
+}
+
+.unactor:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #434343;
+}
+
+.copy {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  float: left;
+  color: #fff;
+}
+
+.copy.power {
+  float: right;
+}
+
+.pordagrande {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  float: left;
+  background-image: url('../images/deadpool.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.descripcionpeli {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.des {
+  width: 50%;
+  padding-right: 2%;
+  float: left;
+}
+
+.la-descripcion {
+  width: 100%;
+  padding-left: 1%;
+  float: left;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.moreinfo {
+  width: 50%;
+  padding-left: 2%;
+  float: left;
+}
+
+.calific {
+  width: 100%;
+  float: left;
+  background-image: url('../images/rating-153125_960_720.png');
+  background-position: 108px 1px;
+  background-size: 110px;
+  background-repeat: no-repeat;
+}
+
+.calificlabel {
+  width: auto;
+  max-width: none;
+  float: left;
+  font-family: 'Droid Sans', sans-serif;
+  color: #d8232a;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.trilercontent {
+  width: 50%;
+  padding-top: 20px;
+  padding-right: 2%;
+  float: left;
+}
+
+.videocontent {
+  position: relative;
+  display: block;
+  width: 98%;
+  max-width: none;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
+}
+
+.traileryrelacionadas {
+  margin-bottom: 20px;
+}
+
+.relacioncontent {
+  width: 50%;
+  padding-top: 20px;
+  float: left;
+}
+
+.relacionadas {
+  width: 98%;
+  padding-left: 2%;
+  float: left;
+}
+
+.triler {
+  width: 100%;
+}
+.videocontent iframe{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  float: left;
+  min-height: 253px;
+}
+.visual{
+  display: block;
+}
+.contentcontacto{
+  margin: 10%;
+}
+.star1{background-image: url('../images/star_01.png');}
+.star2{background-image: url('../images/star_02.png');}
+.star3{background-image: url('../images/star_03.png');}
+.star4{background-image: url('../images/star_04.png');}
+.star5{background-image: url('../images/star_05.png');}
+
+@media (max-width: 991px) {
+  .inputsearch {
+    font-family: 'Droid Sans', sans-serif;
+    color: #fff;
+  }
+  .sliderhome {
+    height: 300px;
+  }
+  .filtroporcagegoria.w--open {
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    padding-bottom: 40px;
+  }
+  .listcat {
+    position: relative;
+  }
+  .listcat.w--open {
+    position: absolute;
+    left: -122px;
+    margin-top: 0px;
+    margin-left: 0%;
+  }
+  .itemlist {
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: none;
+    border-bottom: 1px solid #d8232a;
+    font-size: 20px;
+  }
+  .slide {
+    background-size: cover;
+  }
+  .description {
+    display: none;
+    background-color: transparent;
+  }
+  .titlegrid {
+    opacity: 0;
+    font-size: 15px;
+  }
+  .stars {
+    height: 29px;
+    opacity: 0;
+  }
+  .imagecontent {
+    height: 340px;
+    background-color: transparent;
+    background-image: url('../images/deadpool_2.jpg');
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .textdescription {
+    height: 340px;
+    padding-bottom: 20px;
+    background-color: transparent;
+  }
+  .shadow {
+    width: 92%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(0deg, transparent, #000 39%, #000 89%, transparent);
+    background-image: linear-gradient(90deg, transparent, #000 39%, #000 89%, transparent);
+  }
+  .titlesection {
+    margin-top: 0px;
+  }
+  .copy {
+    margin-left: 1%;
+  }
+  .copy.power {
+    padding-right: 1%;
+  }
+  .icon {
+    color: #d8232a;
+    font-size: 37px;
+  }
+  .menubutmov {
+    padding: 10px;
+  }
+  .menubutmov.w--open {
+    background-color: transparent;
+  }
+  .nav {
+    margin-top: 56px;
+    background-color: transparent;
+  }
+  .videocontent {
+    margin-left: 2%;
+    float: left;
+  }
+  .video {
+    position: relative;
+    width: 100%;
+  }
+  .visual{
+  display: block;
+}
+
+}
+
+@media (max-width: 767px) {
+  .sliderhome {
+    height: 300px;
+  }
+  .slide {
+    background-size: 100% 100%;
+  }
+  .slide.slide1 {
+    background-size: cover;
+  }
+  .description {
+    display: none;
+  }
+  .titlegrid {
+    opacity: 0;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .titlegrid.reltitul {
+    font-size: 10px;
+  }
+  .stars {
+    display: block;
+    height: 24px;
+    opacity: 0;
+  }
+  .stars.relstar {
+    height: 18px;
+  }
+  .imagecontent {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    max-width: 100%;
+    float: left;
+  }
+  .textdescription {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+  }
+  .shadow {
+    display: none;
+    width: 94%;
+  }
+  .titlesection {
+    padding-left: 2%;
+    font-size: 30px;
+  }
+  .unactor {
+    width: 33.33%;
+    font-size: 13px;
+    padding-left: 15px;
+  }
+  .pordagrande {
+    min-height: 200px;
+  }
+  .visual{
+  display: block;
+}
+}
+
+@media (max-width: 479px) {
+  .logo {
+    margin-left: 1%;
+  }
+  .searchf {
+    width: 94%;
+    max-width: none;
+    margin-top: 0px;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  .c960 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .formwrap {
+    width: 97%;
+    padding-top: 0px;
+  }
+  .sliderhome {
+    height: 200px;
+  }
+  .filtroporcagegoria {
+    padding: 20px 10px 0px;
+    float: left;
+  }
+  .filtroporcagegoria.w--open {
+    padding-bottom: 22px;
+  }
+  .listcat.w--open {
+    left: auto;
+    right: -3px;
+    width: 240px;
+    margin-top: 53px;
+    margin-left: 0px;
+    float: right;
+  }
+  .titul {
+    width: 96%;
+    margin-left: 2%;
+    line-height: 31px;
+  }
+  .titul.tdescrip {
+    width: 97%;
+  }
+  .moviecontent {
+    padding-top: 10px;
+  }
+  .onemovie {
+    width: 42.6%;
+  }
+  .onemovie.omh {
+    width: 33.8%;
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+  .desc:hover {
+    border-width: 0px;
+  }
+  .titlegrid {
+    width: 99%;
+    opacity: 0;
+    font-size: 14px;
+  }
+  .titlegrid.reltitul {
+    font-size: 15px;
+  }
+  .stars {
+    width: 88%;
+    height: 24px;
+    opacity: 0;
+  }
+  .stars.relstar {
+    width: 95%;
+    height: 30px;
+  }
+  .textdescription {
+    position: relative;
+  }
+  .extract {
+    width: 97%;
+  }
+  .year {
+    width: 97%;
+    font-size: 15px;
+  }
+  .yea {
+    font-size: 15px;
+  }
+  .titlesection {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .unactor {
+    width: 50%;
+    padding-left: 8%;
+  }
+  .copy {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .iconfelch {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+  }
+  .dropdown {
+    margin-right: 1%;
+    float: right;
+  }
+  .des {
+    width: 100%;
+  }
+  .moreinfo {
+    width: 100%;
+  }
+  .trilercontent {
+    width: 100%;
+  }
+  .relacioncontent {
+    width: 100%;
+  }
+  .visual{
+  display: block;
+  }
+  .footer{
+    width: 99%;
+  }
+}
